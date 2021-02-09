@@ -11,9 +11,15 @@ const connect = function() {
     });
     // interpret incoming data as text
     conn.setEncoding('utf8'); 
+    // conn.on('connect', () => {
+    //   conn.write('you daed cuz you idled!');
+    // });
+
     conn.on('connect', () => {
-      conn.write('you ded cuz you idled!');
-    });
+        console.log("Name: FOI");
+      });
+
+
   
     return conn;
   }
